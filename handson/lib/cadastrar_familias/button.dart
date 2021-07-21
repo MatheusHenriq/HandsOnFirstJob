@@ -6,7 +6,7 @@ import 'package:handson/cadastrar_familias/fields/nascimento/born_field.dart';
 
 class Button extends StatelessWidget {
   final String botaoNome;
-  final Icon? botaoIcone;
+  final IconData? botaoIcone;
   final void Function() onTap;
   const Button(
       {Key? key, required this.botaoNome, this.botaoIcone, required this.onTap})
@@ -37,7 +37,7 @@ class Button extends StatelessWidget {
               padding: EdgeInsets.all(3),
             ),
             Icon(
-              Icons.calendar_today,
+              botaoIcone,
               size: 18,
             ),
             SizedBox(

@@ -62,6 +62,7 @@ class CadastrarFamilias extends StatelessWidget {
                       );
                     },
                     botaoNome: 'Nascimento',
+                    botaoIcone: Icons.calendar_today,
                   ),
                 ],
               ),
