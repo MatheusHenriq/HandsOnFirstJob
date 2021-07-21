@@ -30,13 +30,14 @@ class Telephone extends StatelessWidget {
                 color: Colors.orange[300],
               ),
             ),
+            MyTextFormField(),
             Text(
               'Contato 2',
               style: TextStyle(
                 color: Colors.orange[300],
               ),
             ),
-            TextFormField(),
+            MyTextFormField(),
           ],
         ),
       ),
