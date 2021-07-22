@@ -8,7 +8,7 @@ class MyTextFormField extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
       child: TextFormField(
-        obscureText: true,
+        obscureText: false,
         decoration: InputDecoration(
           hoverColor: Colors.amber[100],
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),

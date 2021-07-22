@@ -62,6 +62,14 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Agency
+      fonts:
+        - asset: assets/fonts/AGENCYR.ttf
+
+  # - family: AGENCYB
+  #   fonts:
+  #     - asset: assets/fonts/AGENCYB.ttf 
+    
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
@@ -72,12 +80,6 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-    - family: AGENCYB
-      fonts:
-        - asset: assets/fonts/AGENCYB.ttf
-    - family: AGENCYR
-      fonts:
-        - asset: assets/fonts/AGENCYR.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

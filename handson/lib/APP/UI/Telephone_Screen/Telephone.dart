@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:handson/APP/UI/Telephone_Screen/Widgets/Contact_Texts.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/MyTextFormField.dart';
 
 class Telephone extends StatelessWidget {
@@ -15,13 +16,13 @@ class Telephone extends StatelessWidget {
           backgroundColor: Colors.orange[300],
           title: Text(
             'Telefone',
-            style: TextStyle(fontFamily: 'AGENCYB', fontSize: 30),
+            style: TextStyle(fontFamily: 'Agency', fontSize: 40),
           ),
           actions: <Widget>[
             Container(
               decoration:
                   BoxDecoration(shape: BoxShape.circle, color: Colors.white),
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              margin: EdgeInsets.symmetric(horizontal: 20),
               alignment: Alignment.center,
               child: IconButton(
                 onPressed: () {},
@@ -35,23 +36,20 @@ class Telephone extends StatelessWidget {
           ],
         ),
         body: SafeArea(
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Contato Nº1',
-                style: TextStyle(
-                  color: Colors.orange[300],
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+            child: Column(
+              children: <Widget>[
+                Contact_Texts(
+                  Contact_Number: 'Número 1',
                 ),
-              ),
-              MyTextFormField(),
-              Text(
-                'Contato Nº2',
-                style: TextStyle(
-                  color: Colors.orange[300],
+                MyTextFormField(),
+                Contact_Texts(
+                  Contact_Number: 'Número 2',
                 ),
-              ),
-              MyTextFormField(),
-            ],
+                MyTextFormField(),
+              ],
+            ),
           ),
         ),
       ),
