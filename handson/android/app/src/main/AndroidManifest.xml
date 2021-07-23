@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.handson">
+    package="com.example.nome_aba">
    <application
-        android:label="handson"
+        android:label="nome_aba"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
