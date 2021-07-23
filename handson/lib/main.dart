@@ -20,16 +20,14 @@ class MyApp extends StatelessWidget {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Container(
-                  margin:
-                      EdgeInsets.only(top: 50, bottom: 0, left: 25, right: 25),
                   height: 50,
-                  width: 400,
+                  width: double.infinity,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text('Responsável',
                         style: TextStyle(
                           color: Colors.white,
-                          fontFamily: 'AGENCYB.TTF',
+                          // fontFamily: 'AGENCYB.TTF',
                           fontWeight: FontWeight.w700,
                           fontSize: 20,
                         )),
@@ -38,11 +36,10 @@ class MyApp extends StatelessWidget {
                       color: Colors.blueAccent,
                       borderRadius: BorderRadius.all(Radius.circular(5)))),
               Container(
-                margin: EdgeInsets.only(top: 0, left: 25, right: 25),
-                height: 360,
-                width: 400,
+                padding: EdgeInsets.only(top: 0, left: 25, right: 25),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TextRef(
                       textoR: 'Nome do Responsável',
@@ -61,12 +58,18 @@ class MyApp extends StatelessWidget {
                     TextField2(
                       caixa2: '',
                     ),
-                    BotaoCancelar(
-                      cancelar: '',
+                    Expanded(
+                      child: Row(
+                        children: [
+                          BotaoCancelar(
+                            cancelar: '',
+                          ),
+                          BotaoProximo(
+                            proximo: '',
+                          )
+                        ],
+                      ),
                     ),
-                    BotaoProximo(
-                      proximo: '',
-                    )
                   ],
                 ),
                 decoration: BoxDecoration(
