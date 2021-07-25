@@ -1,15 +1,22 @@
-import 'dart:ffi';
+//import 'dart:ffi';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:handson/cadastrar_familias/fields/nascimento/born_field.dart';
+//import 'package:handson/cadastrar_familias/fields/nascimento/born_field.dart';
 
 class Button extends StatelessWidget {
   final String botaoNome;
   final IconData? botaoIcone;
   final void Function() onTap;
+  final bool? degrade;
+  final bool? sombra;
   const Button(
-      {Key? key, required this.botaoNome, this.botaoIcone, required this.onTap})
+      {Key? key,
+      required this.botaoNome,
+      this.botaoIcone,
+      required this.onTap,
+      this.degrade = false,
+      this.sombra = false})
       : super(key: key);
 
   @override

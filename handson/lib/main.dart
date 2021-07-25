@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:handson/cadastrar_familias/cadastrar_familias.dart';
-import 'package:handson/cadastrar_familias/button.dart';
+import 'package:handson/cadastrar_familias/fields/nascimento/born_field.dart';
 
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: CadastrarFamilias(),
+        backgroundColor: Colors.white,
+        body: BornField(), //CadastrarFamilias(),
       ),
     ),
   );
