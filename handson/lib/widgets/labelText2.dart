@@ -9,8 +9,8 @@ class TextField2 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(
         top: 15,
-        left: 100,
-        right: 100,
+        left: 120,
+        right: 120,
         bottom: 15,
       ),
       child: TextField(

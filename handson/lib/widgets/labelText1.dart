@@ -9,12 +9,11 @@ class TextField1 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(
         top: 15,
-        left: 25,
-        right: 25,
+        left: 75,
+        right: 75,
         bottom: 15,
       ),
       child: TextField(
-        keyboardType: TextInputType.number,
         decoration:
             InputDecoration(labelText: '', border: OutlineInputBorder()),
       ),

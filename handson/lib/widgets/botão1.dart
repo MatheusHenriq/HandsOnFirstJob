@@ -8,10 +8,10 @@ class BotaoCancelar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        left: 135,
-        right: 135,
-        top: 35,
-        bottom: 10,
+        left: 35,
+        right: 20,
+        top: 0,
+        bottom: 0,
       ),
       child: InkWell(
         child: Container(
