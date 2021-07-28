@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class Contact_Texts extends StatelessWidget {
   final String Contact_Number;
-  Contact_Texts({this.Contact_Number = 'Número 1', Key? key}) : super(key: key);
+  Contact_Texts({this.Contact_Number = 'Número Nº1:', Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

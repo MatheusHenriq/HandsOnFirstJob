@@ -10,8 +10,10 @@ class MyTextFormField extends StatelessWidget {
       child: TextFormField(
         obscureText: false,
         decoration: InputDecoration(
-          hoverColor: Colors.amber[100],
+          hoverColor: Colors.amber[200],
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+          prefixText: '(86) ',
+          prefixStyle: TextStyle(fontWeight: FontWeight.w500),
         ),
       ),
     );

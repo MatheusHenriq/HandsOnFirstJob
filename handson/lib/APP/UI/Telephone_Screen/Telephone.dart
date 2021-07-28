@@ -1,8 +1,10 @@
-import 'dart:ui';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:handson/APP/UI/Telephone_Screen/Widgets/Add_Number.dart';
+import 'package:handson/APP/UI/Telephone_Screen/Widgets/Cancel_Button.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/Contact_Texts.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/MyTextFormField.dart';
+import 'package:handson/APP/UI/Telephone_Screen/Widgets/Next_Button.dart';
 
 class Telephone extends StatelessWidget {
   Telephone({Key? key}) : super(key: key);
@@ -13,41 +15,46 @@ class Telephone extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: Colors.orange[300],
-          title: Text(
-            'Telefone',
-            style: TextStyle(fontFamily: 'Agency', fontSize: 40),
+          title: Center(
+            child: Text(
+              'Telefone',
+              style: TextStyle(fontFamily: 'AGENCYR', fontSize: 40),
+            ),
           ),
-          actions: <Widget>[
-            Container(
-              decoration:
-                  BoxDecoration(shape: BoxShape.circle, color: Colors.white),
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              alignment: Alignment.center,
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.arrow_right_alt,
-                  color: Colors.orange[300],
-                ),
-                iconSize: 35,
-              ),
-            )
-          ],
+          backgroundColor: Colors.orange[300],
+          leading: ElevatedButton(
+            onPressed: () {},
+            child: Image.asset(
+              'assets/images/back.png',
+            ),
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.orange[300]),
+            ),
+          ),
         ),
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Column(
               children: <Widget>[
                 Contact_Texts(
-                  Contact_Number: 'Número 1',
+                  Contact_Number: 'Número Nº1:',
                 ),
                 MyTextFormField(),
                 Contact_Texts(
-                  Contact_Number: 'Número 2',
+                  Contact_Number: 'Número Nº2:',
                 ),
                 MyTextFormField(),
+                Add_Number(),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                  child: Row(
+                    children: [
+                      Cancel_Button(),
+                      Nex_Button(),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
