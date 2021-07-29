@@ -37,29 +37,20 @@ class Telephone extends StatelessWidget {
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                SizedBox(
-                  height: 12,
-                ),
                 Contact_Texts(
                   Contact_Number: 'Contato Nº1:',
                 ),
                 MyTextFormField(),
                 Observation(),
-                SizedBox(
-                  height: 15,
-                ),
                 Contact_Texts(
                   Contact_Number: 'Contato Nº2:',
                 ),
                 MyTextFormField(),
                 Observation(),
-                SizedBox(
-                  height: 30,
-                ),
                 Add_Number(),
-                SizedBox(height: 30),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
