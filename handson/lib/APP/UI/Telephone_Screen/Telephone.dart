@@ -5,6 +5,7 @@ import 'package:handson/APP/UI/Telephone_Screen/Widgets/Cancel_Button.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/Contact_Texts.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/MyTextFormField.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/Next_Button.dart';
+import 'package:handson/APP/UI/Telephone_Screen/Widgets/Observation.dart';
 
 class Telephone extends StatelessWidget {
   Telephone({Key? key}) : super(key: key);
@@ -18,14 +19,14 @@ class Telephone extends StatelessWidget {
           title: Center(
             child: Text(
               'Telefone',
-              style: TextStyle(fontFamily: 'AGENCYR', fontSize: 40),
+              style: TextStyle(fontFamily: 'AGENCY', fontSize: 40),
             ),
           ),
           backgroundColor: Colors.orange[300],
           leading: ElevatedButton(
             onPressed: () {},
             child: Image.asset(
-              'assets/images/back.png',
+              'assets/images/backCorreto.png',
             ),
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(Colors.orange[300]),
@@ -34,26 +35,40 @@ class Telephone extends StatelessWidget {
         ),
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
+                SizedBox(
+                  height: 12,
+                ),
                 Contact_Texts(
-                  Contact_Number: 'Número Nº1:',
+                  Contact_Number: 'Contato Nº1:',
                 ),
                 MyTextFormField(),
+                Observation(),
+                SizedBox(
+                  height: 15,
+                ),
                 Contact_Texts(
-                  Contact_Number: 'Número Nº2:',
+                  Contact_Number: 'Contato Nº2:',
                 ),
                 MyTextFormField(),
+                Observation(),
+                SizedBox(
+                  height: 30,
+                ),
                 Add_Number(),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-                  child: Row(
-                    children: [
-                      Cancel_Button(),
-                      Nex_Button(),
-                    ],
-                  ),
+                SizedBox(height: 30),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Cancel_Button(),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Next_Button(),
+                  ],
                 ),
               ],
             ),

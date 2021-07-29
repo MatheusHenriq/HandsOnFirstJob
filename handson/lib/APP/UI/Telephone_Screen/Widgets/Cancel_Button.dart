@@ -9,6 +9,7 @@ class Cancel_Button extends StatelessWidget {
       child: Container(
         child: Text(
           'Cancelar',
+          style: TextStyle(fontFamily: 'AGENCY', fontSize: 20),
           textAlign: TextAlign.center,
         ),
         alignment: Alignment.centerRight,
@@ -17,9 +18,11 @@ class Cancel_Button extends StatelessWidget {
             border: Border.all(color: Colors.orange.shade900),
             borderRadius: BorderRadius.circular(10),
             shape: BoxShape.rectangle),
-        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       ),
-      onTap: () {},
+      onTap: () {
+        Navigator.pop(context);
+      },
     );
   }
 }

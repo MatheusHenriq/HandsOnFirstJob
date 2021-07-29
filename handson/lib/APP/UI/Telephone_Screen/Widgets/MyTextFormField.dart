@@ -5,15 +5,20 @@ class MyTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-      child: TextFormField(
-        obscureText: false,
-        decoration: InputDecoration(
-          hoverColor: Colors.amber[200],
-          border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
-          prefixText: '(86) ',
-          prefixStyle: TextStyle(fontWeight: FontWeight.w500),
+    return Container(
+      constraints: BoxConstraints.tightFor(width: 300, height: 100),
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 20),
+        child: TextFormField(
+          obscureText: false,
+          maxLength: 9,
+          decoration: InputDecoration(
+            hoverColor: Colors.amber[200],
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+            prefixText: '(86) ',
+            prefixStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 17),
+            counterText: '',
+          ),
         ),
       ),
     );

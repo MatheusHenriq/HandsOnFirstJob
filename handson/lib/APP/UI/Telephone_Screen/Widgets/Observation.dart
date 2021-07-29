@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Add_Number extends StatelessWidget {
-  const Add_Number({Key? key}) : super(key: key);
+class Observation extends StatelessWidget {
+  const Observation({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,8 @@ class Add_Number extends StatelessWidget {
               shape: BoxShape.rectangle),
           constraints: BoxConstraints.tightFor(width: 50, height: 50),
           alignment: Alignment.center,
-          child: Icon(
-            Icons.add_call,
+          child: Image.asset(
+            'assets/images/observacoes.png',
             color: Colors.deepOrangeAccent,
           ),
         ),
