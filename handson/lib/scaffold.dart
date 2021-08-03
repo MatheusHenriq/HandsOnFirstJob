@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'checkcircle.dart';
+import 'package:segundo_teste/qualidade.dart';
 
-//appbar com o nome da tela e o icone
-
-class Casa extends StatelessWidget {
-  const Casa({Key? key}) : super(key: key);
+class Agua extends StatelessWidget {
+  const Agua({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +21,7 @@ class Casa extends StatelessWidget {
           ),
         ),
         title: Text(
-          'Casa',
+          'Água',
           style: TextStyle(
             fontFamily: 'AGENCYR',
             fontSize: 28,

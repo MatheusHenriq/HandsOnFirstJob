@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-//textfield para digitar a situação da casa caso a opção "outros" seja marcada
-
 class Outros extends StatefulWidget {
   const Outros({Key? key}) : super(key: key);
 
@@ -29,8 +27,10 @@ class _OutrosState extends State<Outros> {
           borderRadius: const BorderRadius.all(const Radius.circular(10)),
           color: Colors.grey[300],
         ),
-        child: TextField(
-          decoration: InputDecoration(border: InputBorder.none),
+        child: Center(
+          child: TextField(
+            decoration: InputDecoration(border: InputBorder.none),
+          ),
         ),
       ),
     );
