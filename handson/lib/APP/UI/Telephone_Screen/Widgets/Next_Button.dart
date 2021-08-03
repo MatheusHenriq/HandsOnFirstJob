@@ -22,8 +22,8 @@ class Next_Button extends StatelessWidget {
           ),
           alignment: Alignment.centerRight,
           decoration: BoxDecoration(
-              color: Colors.amber[500],
-              border: Border.all(color: Colors.orange.shade900),
+              color: Colors.green[400],
+              border: Border.all(color: Colors.green.shade900),
               borderRadius: BorderRadius.circular(10),
               shape: BoxShape.rectangle),
           padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),

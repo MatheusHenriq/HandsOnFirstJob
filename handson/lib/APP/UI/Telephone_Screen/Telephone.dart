@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/Add_Number.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/Cancel_Button.dart';
-import 'package:handson/APP/UI/Telephone_Screen/Widgets/Contact_Texts.dart';
+import 'package:handson/APP/UI/Telephone_Screen/Widgets/Text_Titles.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/MyTextFormField.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/Next_Button.dart';
 import 'package:handson/APP/UI/Telephone_Screen/Widgets/Observation.dart';
@@ -22,14 +22,14 @@ class Telephone extends StatelessWidget {
               style: TextStyle(fontFamily: 'AGENCY', fontSize: 40),
             ),
           ),
-          backgroundColor: Colors.orange[300],
+          backgroundColor: Colors.green[800],
           leading: ElevatedButton(
             onPressed: () {},
             child: Image.asset(
               'assets/images/backCorreto.png',
             ),
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.orange[300]),
+              backgroundColor: MaterialStateProperty.all(Colors.green[800]),
             ),
           ),
         ),
@@ -40,15 +40,21 @@ class Telephone extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Contact_Texts(
-                  Contact_Number: 'Contato Nº1:',
+                Text_Title(
+                  Text_: 'Contato Nº1:',
                 ),
-                MyTextFormField(),
+                MyTextFormField(
+                  DDD: '(86) ',
+                  Number_of_Characters: 9,
+                ),
                 Observation(),
-                Contact_Texts(
-                  Contact_Number: 'Contato Nº2:',
+                Text_Title(
+                  Text_: 'Contato Nº2:',
                 ),
-                MyTextFormField(),
+                MyTextFormField(
+                  DDD: '(86) ',
+                  Number_of_Characters: 9,
+                ),
                 Observation(),
                 Add_Number(),
                 Row(

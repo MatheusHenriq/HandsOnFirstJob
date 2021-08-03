@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Contact_Texts extends StatelessWidget {
-  final String Contact_Number;
-  Contact_Texts({this.Contact_Number = 'Contato Nº1:', Key? key})
-      : super(key: key);
+class Text_Title extends StatelessWidget {
+  final String Text_;
+  Text_Title({this.Text_ = 'Contato Nº1:', Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,9 +10,9 @@ class Contact_Texts extends StatelessWidget {
       child: Align(
         alignment: Alignment.centerLeft,
         child: Text(
-          Contact_Number,
+          Text_,
           style: TextStyle(
-              color: Colors.orange[300],
+              color: Colors.green[800],
               fontSize: 20,
               fontWeight: FontWeight.bold),
         ),
