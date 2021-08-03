@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class TextField2 extends StatelessWidget {
-  final String? caixa2;
-  const TextField2({Key? key, this.caixa2}) : super(key: key);
+class TextField1 extends StatelessWidget {
+  final String? caixa1;
+  const TextField1({Key? key, this.caixa1}) : super(key: key);
 
+// Widget: Um campo para inserir algum texto.
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
         top: 15,
-        left: 120,
-        right: 120,
+        left: 75,
+        right: 75,
         bottom: 15,
       ),
       child: TextField(
-        keyboardType: TextInputType.number,
         decoration:
             InputDecoration(labelText: '', border: OutlineInputBorder()),
       ),

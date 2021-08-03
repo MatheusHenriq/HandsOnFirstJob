@@ -4,6 +4,7 @@ class BotaoProximo extends StatelessWidget {
   final String? proximo;
   const BotaoProximo({Key? key, this.proximo}) : super(key: key);
 
+// Widget: Representa um botão escrito "próximo".
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -25,12 +26,20 @@ class BotaoProximo extends StatelessWidget {
                   'Próximo',
                   style: TextStyle(
                     color: Colors.white,
+                    fontFamily: 'AGENCYR',
                     fontWeight: FontWeight.w800,
                     fontSize: 20,
                   ),
                 ),
               ),
-              Icon(Icons.done_outline),
+              SizedBox(
+                width: 5,
+              ),
+              Icon(
+                Icons.done,
+                color: Colors.white,
+                size: 36,
+              ),
             ],
           ),
         ),

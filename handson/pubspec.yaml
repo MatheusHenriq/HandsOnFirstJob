@@ -61,10 +61,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 
-# fonts:   
-#   - family: Agency
-#     fonts:       
-#       - asset: assets/fonts/agency.ttf
+fonts:   
+  - family: AGENCYR
+    fonts:       
+      - asset: assets/fonts/AGENCYR.TTF
         
     
 

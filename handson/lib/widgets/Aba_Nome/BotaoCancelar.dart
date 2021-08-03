@@ -4,6 +4,7 @@ class BotaoCancelar extends StatelessWidget {
   final String? cancelar;
   const BotaoCancelar({Key? key, this.cancelar}) : super(key: key);
 
+// Widget: Representa um botão escrito "cancelar".
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -26,6 +27,7 @@ class BotaoCancelar extends StatelessWidget {
             child: Text(
               'Cancelar',
               style: TextStyle(
+                fontFamily: 'AGENCYR',
                 color: Colors.black,
                 fontWeight: FontWeight.w800,
                 fontSize: 16,

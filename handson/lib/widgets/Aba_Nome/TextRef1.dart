@@ -4,6 +4,7 @@ class TextRef1 extends StatelessWidget {
   final String? textoR;
   const TextRef1({Key? key, this.textoR}) : super(key: key);
 
+//Widget: Texto
   @override
   Widget build(BuildContext context) {
     return Padding(
