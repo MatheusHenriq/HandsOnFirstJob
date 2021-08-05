@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:segundo_teste/outros.dart';
+import 'outros.dart';
 import 'botaoprox.dart';
 import 'botaocancel.dart';
 

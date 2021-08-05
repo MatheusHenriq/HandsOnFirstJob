@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:segundo_teste/qualidade.dart';
+import 'Checkcircle.dart';
+import 'Botaocancel.dart';
+import 'Botaoprox.dart';
 
-class Agua extends StatelessWidget {
-  const Agua({Key? key}) : super(key: key);
+//corpo da tela
+
+class SaudeFisica extends StatelessWidget {
+  const SaudeFisica({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +25,7 @@ class Agua extends StatelessWidget {
           ),
         ),
         title: Text(
-          'Água',
+          'Saúde Física',
           style: TextStyle(
             fontFamily: 'AGENCYR',
             fontSize: 28,
@@ -35,8 +39,20 @@ class Agua extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        child: Checkcircle(),
+      body: Column(
+        children: [
+          CheckCircle(),
+          Container(
+            margin: EdgeInsets.fromLTRB(320, 20, 0, 0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Botaocinza(),
+                Botaoazul(),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
