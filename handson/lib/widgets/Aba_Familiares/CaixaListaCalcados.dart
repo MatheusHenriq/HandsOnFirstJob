@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class CaixaLista extends StatefulWidget {
+class CaixaListaCalcados extends StatefulWidget {
   @override
-  _CaixaListaState createState() => _CaixaListaState();
+  _CaixaListaCalcadosState createState() => _CaixaListaCalcadosState();
 }
 
-class _CaixaListaState extends State<CaixaLista> {
+class _CaixaListaCalcadosState extends State<CaixaListaCalcados> {
   String title = 'DropDownButton';
   String? _calcadoVal;
   List _calcado = [
@@ -48,7 +48,6 @@ class _CaixaListaState extends State<CaixaLista> {
     return Padding(
       padding: const EdgeInsets.all(20),
       child: Container(
-        //padding: EdgeInsets.only(left: 20, right: 20),
         decoration: BoxDecoration(
             border: Border.all(
           color: Colors.grey,
