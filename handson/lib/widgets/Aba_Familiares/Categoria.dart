@@ -8,21 +8,58 @@ class Categoria extends StatelessWidget {
     return Container(
       child: Row(
         children: [
-          Text('Nome'),
-          Text('Idade'),
-          Text('Sexo'),
-          Text('Trabalha'),
-          Text('Profissão'),
-          Text('Estuda'),
-          Text('Alfabetização'),
-          Text('Numeração'),
-          Text('Evang.'),
+          SizedBox(width: 88),
+          Text(
+            'Nome',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 58),
+          Text(
+            'Idade',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 50),
+          Text(
+            'Sexo',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 87),
+          Text(
+            'Trabalha',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 75),
+          Text(
+            'Profissão',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 57),
+          Text(
+            'Estuda',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 100),
+          Text(
+            'Alfabetização',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 53),
+          Text(
+            'Num.',
+            style: TextStyle(fontSize: 18),
+          ),
+          SizedBox(width: 45),
+          Text(
+            'Evang.',
+            style: TextStyle(fontSize: 18),
+          ),
         ],
       ),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.grey),
         color: Colors.blueGrey[50],
-        borderRadius: BorderRadius.all(Radius.circular(5)),
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(5), topRight: Radius.circular(5)),
       ),
     );
   }

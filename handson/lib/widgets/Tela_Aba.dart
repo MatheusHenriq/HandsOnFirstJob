@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:nome_aba/widgets/Aba_Nome/TextRef1.dart';
 import 'package:nome_aba/widgets/Aba_Nome/TextRef2.dart';
-import 'package:nome_aba/widgets/Aba_Nome/Bot%C3%A3oCancelar.dart';
-import 'package:nome_aba/widgets/Aba_Nome/Bot%C3%A3oProximo.dart';
 import 'package:nome_aba/widgets/Aba_Nome/labelText1.dart';
 import 'package:nome_aba/widgets/Aba_Nome/labelText2.dart';
+import 'package:nome_aba/widgets/Bot%C3%A3oCancelar.dart';
+import 'package:nome_aba/widgets/Bot%C3%A3oProximo.dart';
 
 class AbaNome extends StatelessWidget {
   const AbaNome({Key? key}) : super(key: key);

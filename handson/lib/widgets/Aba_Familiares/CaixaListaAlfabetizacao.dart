@@ -19,26 +19,21 @@ class _CaixaListaAlfabetizacaoState extends State<CaixaListaAlfabetizacao> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          border: Border.all(
-        color: Colors.grey,
-      )),
-      child: Center(
-        child: DropdownButton(
-          value: _alfabetizacaoVal,
-          onChanged: (value) {
-            setState(() {
-              _alfabetizacaoVal = value as String?;
-            });
-          },
-          items: _alfabetizacao.map((value) {
-            return DropdownMenuItem(
-              value: value,
-              child: Text(value),
-            );
-          }).toList(),
-        ),
+    return Center(
+      child: DropdownButtonFormField(
+        decoration: InputDecoration.collapsed(hintText: ''),
+        value: _alfabetizacaoVal,
+        onChanged: (value) {
+          setState(() {
+            _alfabetizacaoVal = value as String?;
+          });
+        },
+        items: _alfabetizacao.map((value) {
+          return DropdownMenuItem(
+            value: value,
+            child: Text(value),
+          );
+        }).toList(),
       ),
     );
   }
