@@ -23,7 +23,8 @@ class _CaixaListaQuantidadeState extends State<CaixaListaQuantidade> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: DropdownButton(
+      child: DropdownButtonFormField(
+        decoration: InputDecoration.collapsed(hintText: ''),
         value: _quantVal,
         onChanged: (value) {
           setState(() {
