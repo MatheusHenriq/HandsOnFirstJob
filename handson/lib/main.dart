@@ -13,6 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Aba Familia',
         debugShowCheckedModeBanner: false,
-        home: AbaFamilia());
+        home: AbaNome());
   }
 }

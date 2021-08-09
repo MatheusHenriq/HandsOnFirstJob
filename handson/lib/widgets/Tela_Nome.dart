@@ -31,8 +31,11 @@ class AbaNome extends StatelessWidget {
                       )),
                 ),
                 decoration: BoxDecoration(
-                    color: Colors.blueAccent,
-                    borderRadius: BorderRadius.all(Radius.circular(5)))),
+                  color: Colors.blueAccent,
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(5),
+                      topLeft: Radius.circular(5)),
+                )),
             Container(
               height: 300,
               width: 500,
@@ -74,9 +77,10 @@ class AbaNome extends StatelessWidget {
                 ],
               ),
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular((5))),
-              ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(5),
+                      bottomRight: Radius.circular(5))),
             ),
           ]),
         ),
