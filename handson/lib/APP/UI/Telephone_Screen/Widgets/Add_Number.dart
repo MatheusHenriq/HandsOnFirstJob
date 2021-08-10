@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Add_Number extends StatelessWidget {
-  const Add_Number({Key? key}) : super(key: key);
+class Add_Buttom extends StatelessWidget {
+  Add_Buttom({this.Icon_ = Icons.add, Key? key});
+  final IconData Icon_;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
         child: Container(
+          margin: EdgeInsets.only(top: 40),
           decoration: BoxDecoration(
               color: Colors.green[100],
               border: Border.all(color: Colors.green.shade900),
@@ -15,8 +17,9 @@ class Add_Number extends StatelessWidget {
           constraints: BoxConstraints.tightFor(width: 50, height: 50),
           alignment: Alignment.center,
           child: Icon(
-            Icons.add_call,
+            Icon_,
             color: Colors.green[900],
+            size: 25,
           ),
         ),
         onTap: () {});

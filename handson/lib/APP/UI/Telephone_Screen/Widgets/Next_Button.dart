@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:handson/APP/UI/Book_Screen/Books.dart';
 
 class Next_Button extends StatelessWidget {
   const Next_Button({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class Next_Button extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               Icon(
-                Icons.check,
+                Icons.done,
                 size: 40,
               )
             ],
@@ -28,6 +29,11 @@ class Next_Button extends StatelessWidget {
               shape: BoxShape.rectangle),
           padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         ),
-        onTap: () {});
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Book()),
+          );
+        });
   }
 }

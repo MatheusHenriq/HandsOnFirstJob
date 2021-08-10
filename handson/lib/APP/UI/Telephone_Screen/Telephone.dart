@@ -24,7 +24,9 @@ class Telephone extends StatelessWidget {
           ),
           backgroundColor: Colors.green[800],
           leading: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
             child: Image.asset(
               'assets/images/backCorreto.png',
             ),
@@ -34,41 +36,54 @@ class Telephone extends StatelessWidget {
           ),
         ),
         body: SafeArea(
-          child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text_Title(
-                  Text_: 'Contato Nº1:',
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(40),
+                margin: EdgeInsets.all(40),
+                decoration: BoxDecoration(
+                  color: Colors.grey[350],
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                MyTextFormField(
-                  DDD: '(86) ',
-                  Number_of_Characters: 9,
-                ),
-                Observation(),
-                Text_Title(
-                  Text_: 'Contato Nº2:',
-                ),
-                MyTextFormField(
-                  DDD: '(86) ',
-                  Number_of_Characters: 9,
-                ),
-                Observation(),
-                Add_Number(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Cancel_Button(),
-                    SizedBox(
-                      width: 50,
+                child: (Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text_Title(
+                      Text_: 'Contato Nº1:',
                     ),
-                    Next_Button(),
+                    MyTextFormField(
+                      DDD: '(86) ',
+                      Number_of_Characters: 9,
+                      Text_Type: TextInputType.phone,
+                    ),
+                    SizedBox(height: 15),
+                    Observation(),
+                    Text_Title(
+                      Text_: 'Contato Nº2:',
+                    ),
+                    MyTextFormField(
+                        DDD: '(86) ',
+                        Number_of_Characters: 9,
+                        Text_Type: TextInputType.phone),
+                    SizedBox(height: 15),
+                    Observation(),
+                    Add_Buttom(
+                      Icon_: Icons.add_ic_call,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Cancel_Button(),
+                        SizedBox(width: 30),
+                        Next_Button(),
+                      ],
+                    ),
                   ],
-                ),
-              ],
-            ),
+                )),
+              ),
+            ],
           ),
         ),
       ),
