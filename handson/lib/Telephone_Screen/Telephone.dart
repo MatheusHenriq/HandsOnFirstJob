@@ -1,11 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:handson/APP/UI/Telephone_Screen/Widgets/Add_Number.dart';
-import 'package:handson/APP/UI/Telephone_Screen/Widgets/Cancel_Button.dart';
-import 'package:handson/APP/UI/Telephone_Screen/Widgets/Text_Titles.dart';
-import 'package:handson/APP/UI/Telephone_Screen/Widgets/MyTextFormField.dart';
-import 'package:handson/APP/UI/Telephone_Screen/Widgets/Next_Button.dart';
-import 'package:handson/APP/UI/Telephone_Screen/Widgets/Observation.dart';
 
 class Telephone extends StatelessWidget {
   Telephone({Key? key}) : super(key: key);
