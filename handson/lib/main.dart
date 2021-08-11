@@ -11,8 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Aba Familia',
-        debugShowCheckedModeBanner: false,
-        home: AbaNome());
+        title: 'Telas', debugShowCheckedModeBanner: false, home: AbaNome());
   }
 }
