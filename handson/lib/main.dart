@@ -1,11 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:nome_aba/widgets/Tela_Familiares.dart';
-import 'package:nome_aba/widgets/Tela_Higiene.dart';
-import 'package:nome_aba/widgets/Tela_Nome.dart';
 
-void main() {
-  runApp(MyApp());
-}
+import 'package:flutter/material.dart';
+import 'package:nome_aba/widgets/Tela_Nome.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -14,3 +9,4 @@ class MyApp extends StatelessWidget {
         title: 'Telas', debugShowCheckedModeBanner: false, home: AbaNome());
   }
 }
+
