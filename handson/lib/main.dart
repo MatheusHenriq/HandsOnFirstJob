@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:nome_aba/widgets/Tela_Nome.dart';
 
@@ -9,4 +8,3 @@ class MyApp extends StatelessWidget {
         title: 'Telas', debugShowCheckedModeBanner: false, home: AbaNome());
   }
 }
-
