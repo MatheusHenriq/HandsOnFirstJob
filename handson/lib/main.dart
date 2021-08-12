@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:segundo_teste/cadastrar_familias/fields/necessidades/needs_field.dart';
+import 'package:nome_aba/widgets/Tela_Nome.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.white,
-        body: NeedsField(), //BornField(),
-      ),
-    ),
-  );
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Telas', debugShowCheckedModeBanner: false, home: AbaNome());
+  }
 }
