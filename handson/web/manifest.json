@@ -1,6 +1,6 @@
 {
-    "name": "handson",
-    "short_name": "handson",
+    "name": "nome_aba",
+    "short_name": "nome_aba",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
