@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:segundo_teste/cadastrar_familias/fields/container_bar.dart';
 import 'package:segundo_teste/cadastrar_familias/fields/nascimento/my_textfields.dart';
-import 'package:segundo_teste/cadastrar_familias/fields/necessidades/my_checkbox.dart';
-import 'package:segundo_teste/cadastrar_familias/fields/necessidades/texto.dart';
-import 'package:segundo_teste/cadastrar_familias/gradient_button.dart';
-import 'package:segundo_teste/cadastrar_familias/my_button.dart';
+
+import '../../gradient_button.dart';
+import '../../my_button.dart';
+import '../container_bar.dart';
+import 'my_checkbox.dart';
+import 'texto.dart';
 
 class NeedsField extends StatelessWidget {
   const NeedsField({Key? key}) : super(key: key);

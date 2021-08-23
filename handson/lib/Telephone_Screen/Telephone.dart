@@ -1,11 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:segundo_teste/Telephone_Screen/Widgets/Add_Number.dart';
-import 'package:segundo_teste/Telephone_Screen/Widgets/Cancel_Button.dart';
-import 'package:segundo_teste/Telephone_Screen/Widgets/MyTextFormField.dart';
-import 'package:segundo_teste/Telephone_Screen/Widgets/Observation.dart';
-import 'package:segundo_teste/Telephone_Screen/Widgets/Text_Title.dart';
+import 'Widgets/Add_Number.dart';
+import 'Widgets/Cancel_Button.dart';
+import 'Widgets/MyTextFormField.dart';
 import 'Widgets/Next_Button.dart';
+import 'Widgets/Observation.dart';
+import 'Widgets/Text_Title.dart';
 
 class Telephone extends StatelessWidget {
   Telephone({Key? key}) : super(key: key);

@@ -5,8 +5,8 @@
 
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:segundo_teste/cadastrar_familias/fields/container_bar.dart';
-import 'package:segundo_teste/cadastrar_familias/fields/nascimento/my_textfields.dart';
+import '../container_bar.dart';
+import 'my_textfields.dart';
 
 class BornField extends StatelessWidget {
   const BornField({Key? key}) : super(key: key);
