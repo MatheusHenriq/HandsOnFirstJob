@@ -28,6 +28,7 @@ class Next_Button extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
               shape: BoxShape.rectangle),
           padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+          margin: EdgeInsets.only(right: 20, bottom: 20),
         ),
         onTap: () {
           Navigator.push(
