@@ -10,10 +10,10 @@ class Bottom_List extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          Image.asset('assets/images/Fundo.jpg'),
+          Image.asset('images/Fundo.jpg'),
           InkWell(
             child: Container(
-              child: Image.asset('images/CadastrarBotao.png'),
+              child: Image.asset('images/ListaBotao.png'),
               decoration: BoxDecoration(),
             ),
             onTap: () {

@@ -1,36 +1,47 @@
 import 'package:flutter/material.dart';
-import 'package:segundo_teste/Book_Screen/Widgets/Radio_Buttom.dart';
-import 'package:segundo_teste/Telephone_Screen/Widgets/Add_Number.dart';
-import 'package:segundo_teste/Telephone_Screen/Widgets/MyTextFormField.dart';
-
-import 'Family_Number.dart';
+import 'Conteudo.dart';
 
 class MyGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: 3,
-      childAspectRatio: 1,
-      mainAxisSpacing: 10.0,
-      crossAxisSpacing: 10,
-      children: [
-        Flexible(
-          fit: FlexFit.loose,
-          child: MyTextFormField(
-            DDD: '',
-            Text_Type: TextInputType.name,
-          ),
+    return Container(
+      height: 360,
+      padding: EdgeInsets.all(20),
+      margin: EdgeInsets.only(
+        left: 10,
+        top: 20,
+        right: 30,
+      ),
+      decoration: BoxDecoration(
+        shape: BoxShape.rectangle,
+        borderRadius: BorderRadius.circular(10),
+        color: Colors.grey[350],
+      ),
+      child: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 1,
+          childAspectRatio: 30,
+          mainAxisSpacing: 10.0,
+          crossAxisSpacing: 10,
         ),
-        Flexible(
-          fit: FlexFit.loose,
-          child: Family_Number(),
-        ),
-        Radio_Buttom(),
-        Flexible(
-          fit: FlexFit.loose,
-          child: Add_Buttom(),
-        ),
-      ],
+        children: [
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+          Conteudo(),
+        ],
+      ),
     );
   }
 }

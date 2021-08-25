@@ -44,7 +44,7 @@ class AlertDialog_Family extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   child: Image.asset(
-                    'assets/images/backCorreto.png',
+                    'images/backCorreto.png',
                   ),
                   style: ButtonStyle(
                     backgroundColor:
@@ -59,8 +59,10 @@ class AlertDialog_Family extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Expanded(
+                          flex: 2,
                           child: MyTextFormField(
                             DDD: '',
                             Text_Type: TextInputType.name,
@@ -70,24 +72,10 @@ class AlertDialog_Family extends StatelessWidget {
                         SizedBox(
                           width: 30,
                         ),
-                        MyDropDownButton(),
+                        Expanded(child: MyDropDownButton()),
                       ],
                     ),
-                    Container(
-                      height: 376,
-                      padding: EdgeInsets.all(20),
-                      margin: EdgeInsets.only(
-                        left: 10,
-                        top: 20,
-                        right: 30,
-                      ),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.rectangle,
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.grey[350],
-                      ),
-                      child: MyGridView(),
-                    ),
+                    MyGridView(),
                   ],
                 ),
               ),

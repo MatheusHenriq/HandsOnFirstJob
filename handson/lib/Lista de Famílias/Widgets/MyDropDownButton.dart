@@ -9,49 +9,52 @@ class MyDropDownButton extends StatefulWidget {
 }
 
 class _MyDropDownButtonState extends State<MyDropDownButton> {
-  Object? valueChoose;
-  List listItem = [
-    "Comorbidade",
-    "Poucos Membros",
-    "Muitos Membros",
-    "Situação Crítica"
+  static const listItem = <String>[
+    'Comorbidade',
+    'Poucos Membros',
+    'Muitos Membros',
+    'Situação Crítica'
   ];
+  final List<DropdownMenuItem<String>> _dropDownMenuItems = listItem
+      .map((String value) => DropdownMenuItem<String>(
+            value: value,
+            child: Text(value),
+          ))
+      .toList();
+
+  String? _btnSelectedVal;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Container(
-        margin: EdgeInsets.all(8),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: DropdownButton(
-          hint: Text('Filtrar'),
-          dropdownColor: Colors.green[800],
-          icon: Icon(
-            Icons.arrow_drop_down,
+    return DropdownButton(
+      hint: Row(
+        children: [
+          Text('Filtrar'),
+          Icon(
+            Icons.filter_alt_sharp,
+            color: Colors.green[800],
           ),
-          iconSize: 36,
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 22,
-          ),
-          isExpanded: true,
-          value: valueChoose,
-          onChanged: (newValue) {
-            setState(() {
-              valueChoose = newValue;
-            });
-          },
-          items: listItem.map((valueItem) {
-            return DropdownMenuItem(
-              value: valueItem,
-              child: Text(valueItem),
-            );
-          }).toList(),
-        ),
+        ],
       ),
+      dropdownColor: Colors.green[800],
+      icon: Icon(
+        Icons.arrow_drop_down,
+      ),
+      iconSize: 36,
+      style: TextStyle(
+        color: Colors.black,
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
+      ),
+      isExpanded: true,
+      value: _btnSelectedVal,
+      onChanged: (String? newValue) {
+        if (newValue != null) {
+          setState(() => _btnSelectedVal = newValue);
+        }
+        ;
+      },
+      items: _dropDownMenuItems,
     );
   }
 }
