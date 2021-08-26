@@ -43,8 +43,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/plus.png
-    - assets/images/plus2.png
+    - assets/images/
   #   - images/a_dot_ham.jpeg   
 
   #   - images/a_dot_ham.jpeg
@@ -60,17 +59,13 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: AGENCY
+    - family: AGENCYR
       fonts:
         - asset: assets/fonts/AGENCYR.ttf
 
-    - family: Agency
+    - family: AGENCYB
       fonts:
-        - asset: assets/fonts/Agency-Regular.ttf
-
-    - family: AgencyFB
-      fonts:
-        - asset: assets/fonts/AgencyFB-Regular.ttf     
+        - asset: assets/fonts/AGENCYB.ttf     
 
 
   # - family: AGENCYB
