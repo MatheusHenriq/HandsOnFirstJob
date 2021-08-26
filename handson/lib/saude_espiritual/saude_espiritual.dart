@@ -3,8 +3,8 @@ import 'Checkcircle.dart';
 import 'Botaocancel.dart';
 import 'Botaoprox.dart';
 
-class SaudeFisica extends StatelessWidget {
-  const SaudeFisica({Key? key}) : super(key: key);
+class SaudeEspiritual extends StatelessWidget {
+  const SaudeEspiritual({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

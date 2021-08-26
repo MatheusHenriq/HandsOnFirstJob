@@ -36,7 +36,7 @@ class Telephone extends StatelessWidget {
             ),
           ),
         ),
-        body: SafeArea(
+        body: SingleChildScrollView(
           child: Column(
             children: [
               Container(

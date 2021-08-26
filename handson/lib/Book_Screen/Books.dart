@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nome_aba/Telephone_Screen/Widgets/Add_Number.dart';
-import 'package:nome_aba/Telephone_Screen/Widgets/Cancel_Button.dart';
-import 'package:nome_aba/Telephone_Screen/Widgets/MyTextFormField.dart';
-import 'package:nome_aba/Telephone_Screen/Widgets/Next_Button.dart';
-import 'package:nome_aba/Telephone_Screen/Widgets/Text_Title.dart';
+import 'package:segundo_teste/Telephone_Screen/Widgets/Add_Number.dart';
+import 'package:segundo_teste/Telephone_Screen/Widgets/Cancel_Button.dart';
+import 'package:segundo_teste/Telephone_Screen/Widgets/MyTextFormField.dart';
+import 'package:segundo_teste/Telephone_Screen/Widgets/Next_Button.dart';
+import 'package:segundo_teste/Telephone_Screen/Widgets/Text_Title.dart';
 
 import 'Widgets/Radio_Buttom.dart';
 
@@ -19,7 +19,7 @@ class Book extends StatelessWidget {
           title: Center(
             child: Text(
               'Livros',
-              style: TextStyle(fontFamily: 'AGENCY', fontSize: 40),
+              style: TextStyle(fontFamily: 'AGENCYB', fontSize: 40),
             ),
           ),
           backgroundColor: Colors.green[800],
@@ -54,7 +54,7 @@ class Book extends StatelessWidget {
                     Text(
                       'Cadastro de Livros:',
                       style: TextStyle(
-                          fontFamily: 'AGENCY',
+                          fontFamily: 'AGENCYR',
                           fontSize: 40,
                           color: Colors.green[800]),
                     ),

@@ -36,7 +36,9 @@ class Brinquedo extends StatelessWidget {
           ],
         ),
         body: Center(
-          child: Tela(),
+          child: SingleChildScrollView(
+            child: Tela(),
+          )
         ));
   }
 }

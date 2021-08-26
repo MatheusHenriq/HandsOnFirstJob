@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nome_aba/widgets/Aba_Familiares/Categoria.dart';
-import 'package:nome_aba/widgets/Aba_Familiares/Linha.dart';
-import 'package:nome_aba/widgets/Bot%C3%A3oCancelar.dart';
-import 'package:nome_aba/widgets/Bot%C3%A3oPlus.dart';
-import 'package:nome_aba/widgets/Bot%C3%A3oProximo.dart';
+import 'package:segundo_teste/widgets/Aba_Familiares/Categoria.dart';
+import 'package:segundo_teste/widgets/Aba_Familiares/Linha.dart';
+import 'package:segundo_teste/widgets/Bot%C3%A3oCancelar.dart';
+import 'package:segundo_teste/widgets/Bot%C3%A3oPlus.dart';
+import 'package:segundo_teste/widgets/Bot%C3%A3oProximo.dart';
 
 class AbaFamilia extends StatelessWidget {
   const AbaFamilia({Key? key}) : super(key: key);
