@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tela_principal/app/tela_principal/buttons.dart';
+
+import 'buttons.dart';
+
 
 class TelaPrinc extends StatelessWidget {
   const TelaPrinc({ Key? key }) : super(key: key);

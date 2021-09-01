@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:nome_aba/widgets/Aba_Familiares/Bot%C3%A3oFlag.dart';
-import 'package:nome_aba/widgets/Aba_Familiares/Botoes_MF.dart';
-import 'package:nome_aba/widgets/Aba_Familiares/Botoes_SN.dart';
-import 'package:nome_aba/widgets/Aba_Familiares/CaixaListaAlfabetizacao.dart';
+
+
+import 'Botoes_MF.dart';
+import 'Botoes_SN.dart';
+import 'BotãoFlag.dart';
+import 'CaixaListaAlfabetizacao.dart';
 
 class Linha extends StatelessWidget {
   const Linha({Key? key}) : super(key: key);

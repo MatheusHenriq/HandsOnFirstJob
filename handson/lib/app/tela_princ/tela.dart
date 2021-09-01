@@ -1,6 +1,7 @@
-import 'package:cadastrar_familia/app/tela_princ/buttons.dart';
-import 'package:cadastrar_familia/app/tela_princ/text.dart';
+
 import 'package:flutter/material.dart';
+import 'package:segundo_teste/app/tela_princ/buttons.dart';
+import 'package:segundo_teste/app/tela_princ/text.dart';
 //import 'package:gradient_app/gradient_app_bar.dart';
 
 class TelaPrinc extends StatelessWidget {

@@ -8,37 +8,24 @@ class Radio_Buttom extends StatefulWidget {
 }
 
 class _Radio_ButtomState extends State<Radio_Buttom> {
-  int x = 0;
-  changeValue(int y) {
-    setState(() {
-      x = y;
-    });
-  }
+  int selectedValue = 0;
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
-      Container(
-        child: Radio(
-            toggleable: true,
-            value: x,
-            groupValue: x,
-            activeColor: Colors.lightGreen[800],
-            onChanged: (int? val) {
-              setState(() {
-                changeValue(val!);
-              });
-            }),
+    return Container(
+      child: Radio<int>(
+        toggleable: true,
+        value: 1,
+        groupValue: selectedValue,
+        activeColor: Colors.lightGreen[800],
+        onChanged: (value) {
+          if (selectedValue != 1) {
+            setState(() => selectedValue = 1);
+          } else {
+            setState(() => selectedValue = 0);
+          }
+        },
       ),
-      Container(
-        child: Text(
-          'Não Possui',
-          style: TextStyle(
-            fontSize: 17,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-    ]);
+    );
   }
 }
