@@ -28,7 +28,7 @@ class Book extends StatelessWidget {
               Navigator.pop(context);
             },
             child: Image.asset(
-              'assets/images/backCorreto.png',
+              'images/backCorreto.png',
             ),
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(Colors.green[800]),
@@ -83,7 +83,16 @@ class Book extends StatelessWidget {
                               Text_Type: TextInputType.number,
                               TextFormFiledWidth: 100,
                             ),
-                            Radio_Buttom(),
+                            Row(children: [
+                              Radio_Buttom(),
+                              Text(
+                                'Não Possui',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ]),
                           ],
                         ),
                       ],

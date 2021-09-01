@@ -17,30 +17,17 @@ class MyGridView extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         color: Colors.grey[350],
       ),
-      child: GridView(
+      child: GridView.builder(
+        itemCount: 10,
+        itemBuilder: (ctx, index) {
+          return Conteudo();
+        },
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 1,
           childAspectRatio: 30,
           mainAxisSpacing: 10.0,
           crossAxisSpacing: 10,
         ),
-        children: [
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-          Conteudo(),
-        ],
       ),
     );
   }
